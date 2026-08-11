@@ -1,0 +1,238 @@
+/* ===== General Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333;
+  background-color: #fffaf3;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #a55c2c;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #e8a749;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: #fdf1de;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  text-align: left;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #a55c2c;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #8a4a20;
+}
+
+.dog-avatar {
+  font-size: 10rem;
+  text-align: center;
+}
+
+/* ===== About Section ===== */
+.about {
+  padding: 4rem 2rem;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-card {
+  background-color: #fdf1de;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  width: 200px;
+}
+
+.about-card h3 {
+  margin-bottom: 0.5rem;
+  color: #a55c2c;
+}
+
+.bio {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+/* ===== Gallery Section ===== */
+.gallery {
+  padding: 4rem 2rem;
+  background-color: #fdf1de;
+}
+
+.gallery-note {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 3rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item span {
+  display: block;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+/* ===== Fun Facts Section ===== */
+.facts {
+  padding: 4rem 2rem;
+}
+
+.facts-list {
+  max-width: 600px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.facts-list li {
+  background-color: #fdf1de;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.facts-list li::before {
+  content: "🐾";
+  position: absolute;
+  left: 0.8rem;
+}
+
+/* ===== Contact Section ===== */
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #e8a749;
+  color: #ffffff;
+}
+
+.contact h2 {
+  color: #ffffff;
+}
+
+.contact .btn {
+  background-color: #ffffff;
+  color: #a55c2c;
+  margin-top: 1rem;
+}
+
+.contact .btn:hover {
+  background-color: #f5f5f5;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #333;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    text-align: center;
+  }
+
+  .dog-avatar {
+    margin-top: 2rem;
+  }
+}
